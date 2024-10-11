@@ -1,1 +1,15 @@
 # Web Application
+- It's a Simple website that for training that has many functions
+  - Login
+  - Sign Up
+  - Create Password
+  - Calender
+  - To-Do List
+- Saved the data on Local Storage
+- ![image](https://github.com/user-attachments/assets/6cffdc39-6bed-4022-b84f-afec4dbd2608)
+- ![image](https://github.com/user-attachments/assets/1a064d58-d363-4d08-b585-622971fb272e)
+- ![image](https://github.com/user-attachments/assets/7f472753-c9df-4c12-9484-9f0935422b41)
+- ![image](https://github.com/user-attachments/assets/054614b4-c8bb-42c4-a27f-f89cb1669f56)
+- ![image](https://github.com/user-attachments/assets/9541d789-6ccb-4104-a27e-b114ab900351)
+- ![image](https://github.com/user-attachments/assets/f6fa7fe7-682a-4da7-8681-7d796d961aca)
+- ![image](https://github.com/user-attachments/assets/c45b3d70-51be-4ff1-acea-b541e30b6748)
