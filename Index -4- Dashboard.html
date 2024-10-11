@@ -1,0 +1,218 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Script -4- Dashboard.js" defer></script>
+    <link rel="stylesheet" href="Style -4- Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dashboard-window">
+
+        <nav>
+            <header class="sidenav-header">
+                <div class="icon-profile">
+                    <i class="fa fa-user-circle"></i>
+                </div>
+                <div class="header-title">
+                    <h4 class="manager-name-header">Company</h4>
+                    <h4 class="manager-title-header">Manager</h4>
+                </div>
+            </header>
+            <div class="sidenav  nav-tabs nav-tabs-icon">
+                <span class="sidenav-icon">
+                    <div class="icon-bg-blank"><i class="fa fa-home icons"></i></div>
+                </span>
+                <h4 class="sidenav-title">Home</h4>
+            </div>
+            <div class="sidenav  nav-tabs nav-tabs-icon">
+                <span class="sidenav-icon">
+                    <div class="icon-bg-blank"><i class="fa fa-line-chart icons"></i></div>
+                </span>
+                <h4 class="sidenav-title">Dashboard</h4>
+
+            </div>
+
+            <!--  -->
+            <div class="sidenav-create-tab  nav-tabs nav-tabs-icon-create">
+                <div class="sidenav-create">
+                    <span class="sidenav-icon">
+                        <div class="icon-bg-blank-home"><i class="fa fa-plus icons"></i></div>
+                    </span>
+                    <h4 class="sidenav-title-create">Create</h4>
+                    <span class="sidenav-icon-second">
+                        <a href="javascript:void(0);" class="icon-burgerNav">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="create-options">
+                <div class="create-tab-option tab-opt-selection">Emploees</div>
+                <div class="create-tab-option">Projects</div>
+                <div class="create-tab-option">Departments</div>
+            </div>
+            <!--  -->
+
+            <div class="sidenav nav-tabs nav-tabs-icon">
+                <span class="sidenav-icon">
+                    <div class="icon-bg-blank"><i class="fa fa-user-o icons"></i></div>
+                </span>
+                <h4 class="sidenav-title">Profile</h4>
+            </div>
+            <div class="sidenav nav-tabs nav-tabs-icon">
+                <span class="sidenav-icon">
+                    <div class="icon-bg-blank"><i class="fa fa-check-square-o icons"></i></div>
+                </span>
+                <h4 class="sidenav-title">To-Do-List</h4>
+            </div>
+            <div class="sidenav nav-tabs nav-tabs-icon">
+                <span class="sidenav-icon">
+                    <div class="icon-bg-blank"><i class="fa fa-calendar icons"></i></div>
+                </span>
+                <h4 class="sidenav-title">Calender</h4>
+            </div>
+        </nav>
+
+        <div class="content-div">
+
+            <section class="home-sec">
+                <div class="Home-bg">
+                    <img src="5-Home Background.jpg" class="img-home-bg">
+                </div>
+                <div class="Home-Content">
+                    <h1>Welcome...</h1>
+                    <p>Quality You Can Trust, Value You Can Count On.</p>
+                </div>
+            </section>
+            <section class="dashboard-sec tab-section-invisible">
+                <div class="dashboard-content">
+                    <ul>
+                        <li class="list-1"></li>
+                        <li class="list-1"></li>
+                        <li class="list-1"></li>
+                        <li class="list-1"></li>
+                    </ul>
+                    <ul>
+                        <li class="list-2"></li>
+                        <li class="list-2"></li>
+                        <li class="list-2"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--  -->
+            <section class="create-sec">
+                <div class="option-page show-option">
+                    <div class="employee-table">
+                        <div class="emp-table-header">
+                            <h2>Employee Table</h2>
+                            <span class="emp-searchbar">
+                                <label for="search-emp-table"> Search.. </label>
+                                <input type="text" id="search-emp-table" placeholder="">
+                            </span>
+                            <button>Add New Employee</button>
+                        </div>
+                        <table>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="option-page show-option">
+                    <h2>asa</h2>
+                </div>
+                <div class="option-page show-option">
+                    <h3>fd</h3>
+                </div>
+            </section>
+            <!--  -->
+
+            <section class="profile-sec tab-section-invisible">
+                <div class="profile-Container">
+                    <ul class="Profile-Cards">
+                        <li class="Profile-Card img-links">
+                            <img src="" alt="">
+                            <ul>
+                                <li class="profile-facebook"><a href=""></a></li>
+                                <li class="profile-linkedin"></li>
+                                <li class="profile-whatsapp"></li>
+                            </ul>
+                        </li>
+                        <ul class="Profile-Card personal-info">
+                            <li class="Profile-Card-sec personal-info-1"></li>
+                            <li class="Profile-Card-sec personal-info-2"></li>
+                        </ul>
+                        <li class="Profile-Card about"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="todolist-sec tab-section-invisible">
+                <div class="todo-container">
+                    <h2>To-Do List: <img src="5-check-list.png"></h2>
+                    <div class="row">
+                        <input type="text" id="input-todolist" placeholder="Add your note">
+                        <button onclick="addTask()" class="todo-add-btn">Add</button>
+                    </div>
+                    <ul id="todo-list-cotainer">
+                    </ul>
+                </div>
+            </section>
+            <section class="calender-sec tab-section-invisible">
+                <div class="cal-container">
+                    <div class="cal-header">
+                        <div class="cal-month"></div>
+                        <div class="cal-btns">
+                            <div class="cal-btn today">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <div class="cal-btn prev">
+                                <i class="fa fa-caret-left"></i>
+                            </div>
+                            <div class="cal-btn next">
+                                <i class="fa fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cal-weekdays">
+                        <div class="cal-day">Sun</div>
+                        <div class="cal-day">Mon</div>
+                        <div class="cal-day">Tue</div>
+                        <div class="cal-day">Wed</div>
+                        <div class="cal-day">Thu</div>
+                        <div class="cal-day">Fri</div>
+                        <div class="cal-day">Sat</div>
+                    </div>
+                    <div class="cal-days">
+                        <!-- Previous Days -->
+                        <!-- <div class="cal-day previous">28</div>
+                        <div class="cal-day previous">29</div>
+                        <div class="cal-day previous">30</div> -->
+
+                        <!-- Current Days -->
+                        <!-- <div class="cal-day">1</div>
+                        <div class="cal-day">2</div>
+                        <div class="cal-day">3</div>
+                        <div class="cal-day today">4</div>
+                        <div class="cal-day">5</div>
+                        <div class="cal-day">6</div>
+                        <div class="cal-day">7</div> -->
+
+                        <!-- Next Days -->
+                        <!-- <div class="cal-day next">1</div>
+                        <div class="cal-day next">2</div>
+                        <div class="cal-day next">3</div> -->
+                    </div>
+                </div>
+            </section>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

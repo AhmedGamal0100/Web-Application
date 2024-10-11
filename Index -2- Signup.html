@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style -2- Signup.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h2>Create <br> an <br> account</h2>
+        </header>
+        <div>
+            <!-- First/Last Name -->
+            <div>
+                <div class="">
+                    <label for="fName-signup">First Name</label>
+                    <input type="text" id="fName-signup" class="fName-signup" placeholder="..." required>
+                </div>
+                <div>
+                    <label for="sName-signup">Second Name</label>
+                    <input type="text" id="sName-signup" class="sName-signup" placeholder="..." required>
+                </div>
+            </div>
+
+            <!-- Username -->
+            <div>
+                <label for="userName-signup">User Name</label>
+                <input type="text" id="userName-signup" class="userName-signup" placeholder="..." required>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="password-signup">Password</label>
+                <input type="password" id="password-signup" class="password-signup" placeholder="..." required>
+            </div>
+
+            <!-- Date of birth -->
+            <div>
+                <label for="doBirth-signup">Date of Birth</label>
+                <input type="date" id="doBirth-signup" class="doBirth-signup" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email-signup">Email Address</label>
+                <input type="email" id="email-signup" class="email-signup" placeholder="Example@gmail.com" required>
+            </div>
+
+            <!-- Location -->
+            <div>
+                <label for="loc-country-signup">Location</label>
+                <!-- Country -->
+                <select name="" id="loc-country-signup" class="loc-country-signup">
+                    <option value="Egypt">Egypt</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Moroco">Moroco</option>
+                </select>
+
+                <!-- City -->
+                <input type="text" placeholder="City" class="loc-city-signup" required>
+
+                <!-- District -->
+                <label for="district-signup">District</label>
+                <input type="text" placeholder="..." id="district-signup" class="loc-district-signup" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="Signup-Submit-btn">Done</button>
+            <script src="Script -2- Signup.js"></script>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+* {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+div.dashboard-window {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+nav {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 25, 31);
+    color: rgb(72, 76, 97);
+}
+
+nav .sidenav-header {
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    margin-inline: 1;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+h4.manager-name-header {
+    color: white;
+}
+
+div.icon-profile {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.fa-user-circle {
+    scale: 6;
+    padding: 1px;
+    color: white;
+    margin-left: -15px;
+}
+
+
+div.sidenav {
+    display: flex;
+    height: 10vh;
+    place-items: center;
+}
+
+
+div.sidenav-create-tab {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div.sidenav-create {
+    display: flex;
+    height: 10vh;
+    place-items: center;
+}
+
+.create-tab-options {
+    height: 8vh;
+}
+
+.sidenav-icon {
+    width: 25%;
+    height: 100%;
+}
+
+.sidenav-icon-second {
+    width: 25%;
+    height: 100%;
+    place-content: center;
+}
+
+.sidenav-create .sidenav-icon-second a.icon-burgerNav {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.fa-bars {
+    color: rgb(72, 76, 97);
+    scale: 1.4;
+    padding-top: 5px;
+
+}
+
+.sidenav-title {
+    width: 75%;
+    font-size: large;
+}
+
+.sidenav-title-create {
+    width: 50%;
+    font-size: large;
+}
+
+div.create-tab-options {
+    text-align: center;
+    place-content: center;
+    top: 50%;
+    font-weight: 500;
+}
+
+.create-options {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-content: center;
+    scale: 0;
+    transition: 0.2s ease-in-out;
+    height: 0vh;
+}
+
+.show-create-option {
+    scale: 1;
+    transition: 0.2s ease-in-out;
+    height: 24vh;
+}
+
+.navTab-Selector {
+    background-color: black;
+    border-radius: 0px 50px 50px 0px;
+    padding-block: 20px;
+    width: 250px;
+    color: white;
+}
+
+/* 
+
+/* Icons */
+.sidenav-icon .icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    scale: 1.8;
+    position: relative;
+
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    place-content: center;
+    height: 100%;
+    background-color: rgb(72, 76, 97);
+    margin-inline: 10px;
+}
+
+/* 
+.sidenav-icon .icons-click{
+    position: absolute;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(72, 76, 97);
+} */
+
+
+/* .sidenav-icon{
+    border: solid;
+} */
+/* Content */
+
+div.content-div {
+    height: 100%;
+    width: 85%;
+}

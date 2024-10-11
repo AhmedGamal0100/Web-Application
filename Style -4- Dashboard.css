@@ -1,0 +1,719 @@
+* {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+div.dashboard-window {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+nav {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 25, 31);
+    color: rgb(72, 76, 97);
+}
+
+nav .sidenav-header {
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    margin-inline: 1;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+h4.manager-name-header {
+    color: white;
+}
+
+div.icon-profile {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.fa-user-circle {
+    scale: 6;
+    padding: 1px;
+    color: white;
+    margin-left: -15px;
+}
+
+
+div.sidenav {
+    display: flex;
+    height: 10vh;
+    place-items: center;
+}
+
+
+div.sidenav-create-tab {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div.sidenav-create {
+    display: flex;
+    height: 10vh;
+    place-items: center;
+}
+
+.create-tab-option {
+    height: 8vh;
+}
+
+.sidenav-icon {
+    width: 25%;
+    height: 100%;
+}
+
+.sidenav-icon-second {
+    width: 25%;
+    height: 100%;
+    place-content: center;
+}
+
+.sidenav-create .sidenav-icon-second a.icon-burgerNav {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.fa-bars {
+    color: rgb(72, 76, 97);
+    scale: 1.4;
+    padding-top: 5px;
+
+}
+
+.sidenav-title {
+    width: 75%;
+    font-size: large;
+}
+
+.sidenav-title-create {
+    width: 50%;
+    font-size: large;
+}
+
+div.create-tab-option {
+    text-align: center;
+    place-content: center;
+    top: 50%;
+    font-weight: 500;
+}
+
+.create-options {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    place-content: center;
+    scale: 0;
+    transition: 0.2s ease-in-out;
+    height: 0vh;
+}
+
+.show-create-option {
+    scale: 1;
+    transition: 0.2s ease-in-out;
+    height: 24vh;
+}
+
+.navTab-Selector {
+    background-color: black;
+    padding-block: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Icons */
+.sidenav-icon .icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    scale: 1.8;
+    position: relative;
+
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    place-content: center;
+    height: 100%;
+    background-color: rgba(72, 76, 97, 0.2);
+    margin-right: 15px;
+}
+
+/* 
+.sidenav-icon .icons-click{
+    position: absolute;
+    border-radius: 10px;
+    border: 0px;
+    background-color:rgb(72, 76, 97);
+} */
+
+
+/* .sidenav-icon{
+    border: solid;
+} */
+/* Content */
+
+div.content-div {
+    position: relative;
+    height: 100%;
+    width: 85%;
+}
+
+/* Home */
+.home-sec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    scale: 0;
+}
+
+.tab-sec-visible {
+    scale: 1;
+}
+
+.Home-bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
+    height: 100%;
+}
+
+.img-home-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95%;
+    opacity: 0.8;
+    border-radius: 50px;
+}
+
+.Home-Content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.Home-Content h1 {
+    color: white;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+.Home-Content p {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 10px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+/* Dashboard Section */
+.dashboard-sec {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.tab-section-invisible {
+    scale: 0;
+}
+
+.dashboard-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    margin-inline: 20px;
+}
+
+.list-1 {
+    color: white;
+    width: 30%;
+    height: 200px;
+    background-color: rgb(25, 25, 31);
+    margin-inline: 20px;
+}
+
+.list-2 {
+    color: white;
+    width: 40%;
+    height: 500px;
+    background-color: rgb(25, 25, 31);
+    margin-inline: 20px;
+    margin-top: 35px;
+}
+
+/* to-do-List */
+.todolist-sec {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 80vh;
+
+    /* background: linear-gradient(135deg, rgb(75, 75, 75), rgb(25, 25, 31)); */
+    background-color: white;
+    margin: 100px auto 500px;
+    padding: 40px 30px 70px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.todo-container h2 {
+    color: rgb(25, 25, 31);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.todo-container h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.todo-container .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.todo-container input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.todo-container button.todo-add-btn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #f33666;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+
+.todo-container button.todo-add-btn:hover {
+    scale: 1.2;
+    background-color: rgb(83, 196, 121);
+}
+
+#todo-list-cotainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-container ul li {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.85;
+    color: rgb(25, 25, 31);
+    ;
+}
+
+.todo-container ul li::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 8px 20px 25px;
+    cursor: pointer;
+    background-image: url("7-unchecked.png");
+    background-size: cover;
+    top: 6px;
+    left: 8px;
+}
+
+ul li.checked-todo {
+    color: #5555557a;
+    text-decoration: line-through;
+}
+
+ul li.checked-todo::before {
+    background-image: url("7-check-box.png");
+
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+ul li span:hover {
+    background-color: rgb(88, 216, 131);
+    color: white;
+    width: 45px;
+}
+
+ul li .btn-edit-todo {
+    position: absolute;
+    background-color: #f70a45c0;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border: 0px;
+    top: 12px;
+    right: 50px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+ul li .btn-edit-todo:hover {
+    background-color: rgb(88, 216, 131);
+    width: 100px;
+}
+
+/* Calender Section */
+
+.calender-sec {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cal-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 20px;
+    border-radius: 0px 10px 10px 10px;
+    background-color: white;
+}
+
+.cal-container .cal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f70a45c0;
+}
+
+.cal-container .cal-header .cal-month {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
+.cal-container .cal-header .cal-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.cal-container .cal-header .cal-btns .cal-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f70a45c0;
+    transition: all 0.3s;
+}
+
+.cal-container .cal-header .cal-btns .cal-btn:hover {
+    background-color: rgb(88, 216, 131);
+    width: 45px;
+}
+
+.cal-weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cal-weekdays .cal-day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f70a45c0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cal-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cal-days .cal-day {
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.cal-days .cal-day:not(.next):not(.previous):hover {
+    background-color: #f70a45c0;
+    transform: scale(1.1);
+    color: white;
+}
+
+.cal-days .cal-day.today {
+    background-color: #f70a45c0;
+    color: white;
+}
+
+.cal-days .cal-day.previous,
+.cal-days .cal-day.next {
+    color: #ccc;
+}
+
+/* Profile Section*/
+.profile-sec {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-Container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.profile-Container .Profile-Cards {
+    height: 80%;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-inline: 15px;
+}
+
+.profile-Container .Profile-Cards .Profile-Card {
+    width: calc(500px);
+    padding-inline: 15px;
+    height: 650px;
+}
+
+.profile-Container .Profile-Cards .Profile-Card:not(.personal-info) {
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.5s;
+
+}
+
+.profile-Container .Profile-Cards .Profile-Card.personal-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 700px;
+    gap: 30px;
+}
+
+.Profile-Card .Profile-Card-sec {
+    height: 312.5px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.profile-Container .Profile-Cards .Profile-Card:not(.personal-info):hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Profile-Card .Profile-Card-sec:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Create Tab */
+
+nav .create-options .tab-opt-selection{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.show-option{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+/* Employee Table */
+.employee-table{
+    width: 92%;
+    display: flex;
+    background-color: white;
+    border-radius: 0px 20px 20px 20px;
+    align-content: center;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+.employee-table .emp-table-header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding-inline: 30px;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(224, 224, 224, 0.5);
+}
+
+.employee-table .emp-table-header h2{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.0.2);
+}
+
+.employee-table .emp-table-header .emp-searchbar{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.employee-table .emp-table-header .emp-searchbar input{
+    width: 500px;
+    height: 45px;
+    border: none;
+    background-color: white;
+    border-radius:20px;
+}
+.employee-table .emp-table-header .emp-searchbar label{
+    color: #555;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+}
+
+.employee-table .emp-table-header button{
+    background-color: #f33666;
+    border: none;
+    width: 220px;
+    height: 60px;
+    color: white;
+    font-size: 1rem;
+    border-radius:30px;
+}
+
+
